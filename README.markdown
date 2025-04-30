@@ -51,21 +51,23 @@ ui_icon_detector/
 ├── requirements.txt            # Python dependencies
 ├── Dockerfile                  # Docker configuration
 ```
-
 ## Setup Instructions
+#### Clone the Repository:
+```
+git clone https://github.com/Komalsai234/UI-Icon-Detection.git
+cd ui_icon_detector
+```
+### For Model Training
+```
+python main_predcition.py
+```
 
-### Backend Setup (FastAPI on Azure Web App via Azure Portal)
+### Backend Setup (FastAPI on Azure Web App)
 
-1. **Clone the Repository Locally**:
-   - On your local machine, clone the repository:
-     ```bash
-     git clone <repository-url>
-     cd ui_icon_detector
-     ```
 
-2. **Build the Docker Image**:
-   - Ensure the `Dockerfile` and `requirements.txt` are in the root directory.
-   - Build the Docker image:
+#### Build the Docker Image:
+- Ensure the Dockerfile and requirements.txt are in the root directory.
+- Build the Docker image:
      ```bash
      docker build -t ui-icon-detector .
      ```
